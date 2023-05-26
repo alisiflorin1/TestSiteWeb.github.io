@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Titre de votre site web</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h1>Bienvenue sur mon site Web</h1>
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>Ce site est un test et les articles affichés ne sont pas réels. Veuillez accepter pour continuer.</p>
+				<button id="accept">Accepter</button>
+			</div>
+		</div>
+
+    <p>C'est ici que vous pouvez mettre le contenu de votre site Web.</p>
+	<script>
+		var modal = document.getElementById("myModal");
+		var btn = document.getElementById("accept");
+		var span = document.getElementsByClassName("close")[0];
+
+		window.onload = function() {
+		modal.style.display = "block";
+		}
+
+		btn.onclick = function() {
+		modal.style.display = "none";
+		}
+
+		span.onclick = function() {
+		modal.style.display = "none";
+		}
+	</script>
+
+  </body>
+</html>
